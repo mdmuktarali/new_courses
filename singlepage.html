@@ -1,0 +1,404 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Single Courses Details Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/select2-bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap2-toggle.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.green.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<!--For facebook like page-->
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!--For facebook like page-->
+
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+<section class="btn btn-default btn-block header_section_area navbar navbar-default">
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="header_row">
+                    <div class="col-md-3 col-xs-3">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Logo" />
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sx-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav header_menu">
+                                <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                                <li><a href="">Our Software</a></li>
+                                <li><a href="">Free Courses</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="register_button">
+                            <button class="btn btn-md btn-success" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope" aria-hidden="true"></i> Send a Message For Courses</button>
+                            <!--Bootstrap Modal-->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Please Write Below Something For More Details</h4>
+                                        </div>
+                                        <div class="modal-body">
+
+                                            <form class="" method="post" action="#">
+
+                                                <div class="form-group">
+                                                    <label for="name" class="cols-sm-2 control-label">Your Full Name</label>
+                                                    <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                                            <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="email" class="cols-sm-2 control-label">Your Email Address</label>
+                                                    <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                            <input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <label for="phone" class="cols-sm-2 control-label">Your Personal Phone Number</label>
+                                                    <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                                            <input type="text" class="form-control" name="email" id="phone"  placeholder="Enter your Phone Number"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="sel1" class="cols-sm-2 control-label">Select list (select one):</label>
+                                                    <div class="cols-sm-10">
+                                                        <div class="input-group">
+                                                            <span class="input-group-addon"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></span>
+
+                                                            <label for="sel1"></label>
+                                                            <select class="form-control" id="sel1">
+                                                                <option>Select Your Courses Plan</option>
+                                                                <option>Basic Courses</option>
+                                                                <option>Intermediate Courses</option>
+                                                                <option>Advanced Courses</option>
+                                                                <option>Internship Courses</option>
+                                                            </select>
+                                                            <label for="sel1"></label>
+                                                            <select class="form-control" id="sel1">
+                                                                <option>Select Your Courses</option>
+                                                                <option>Web Design</option>
+                                                                <option>Web Development</option>
+                                                                <option>Programming</option>
+                                                                <option>Graphic Design</option>
+                                                                <option>Search Engine Optimization</option>
+                                                            </select>
+                                                            <label for="sel1"></label>
+                                                            <select class="form-control" id="sel1">
+                                                                <option>Select Your Fundamanetal</option>
+                                                                <option>Fundamental One</option>
+                                                                <option>Fundamental Two</option>
+                                                                <option>Fundamental Three</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <div class="input-group">
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group ">
+                                                    <a href="" target="_blank" type="button" id="button" class="btn btn-success btn-lg btn-block login-button">Send Your Message</a>
+                                                </div>
+
+                                            </form>
+
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Bootstrap Modal-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</section>
+
+
+<!--Single Main Content Start-->
+<section>
+    <header>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="single_content_header">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Web Design</a></li>
+                                <li class="active">Fundamental one</li>
+                            </ol>
+                        </div>
+                        <div class="courses_content_details">
+                            <p> Web Design Fundamental 1: <br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i>  Class:1 HTML - tags, formatting, links<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:2 HTML assignment<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:3 CSS -- Use of CSS to change look and feel<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:4 Class and layout-- How to make CSS reusable and create well defined layout<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:5 CSS & Layout assignment<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:6 Images & Fonts-- Working with all kind of images, Background, content etc. Customize font and a little bit about typography<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:7 Forms -- Let's take the input and make it beautiful<br />
+                                <i class="fa fa-angellist" aria-hidden="true"></i> Class:8 Full Course Assignment</p>
+                        </div>
+
+                        <div class="breadcrumb">
+                            <div class="next_goal">
+                                <h2>Your Next Courses is Web Design Fundamental Two</h2>
+                                <a href="" class="btn btn-default">Click to See More Details</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="single_right_sidebar">
+                            <div class="single_widget">
+                                <div class="sidebar_widget_header">
+                                    <h2>Upcoming Camp</h2>
+                                </div>
+                                <div class="sidebar_widget_content">
+                                    <p>
+                                        <a href="https://www.facebook.com/ITSolutionDinajpur/" target="_blank"><img src="img/programming_camp.jpg" alt="" /></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single_widget">
+                                <div class="sidebar_widget_header">
+                                    <h2>Popular Courses</h2>
+                                </div>
+                                <div class="sidebar_widget_content">
+                                    <p>
+                                        <a href="" class="btn btn-default">Web Design</a>
+                                        <a href="" class="btn btn-default">Web Development</a>
+                                        <a href="" class="btn btn-default">Programming</a>
+                                        <a href="" class="btn btn-default">Wordpress</a>
+                                        <a href="" class="btn btn-default">Graphic Design</a>
+                                        <a href="" class="btn btn-default">Search Engine Optimization</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="single_widget">
+                                <div class="sidebar_widget_header">
+                                    <h2>Internship Courses</h2>
+                                </div>
+                                <div class="sidebar_widget_content">
+                                    <p>
+                                        <a href="" class="btn btn-default">UI & UX Artist</a>
+                                        <a href="" class="btn btn-default">Front End Dev</a>
+                                        <a href="" class="btn btn-default">Software Engineer</a>
+                                        <a href="" class="btn btn-default">WP Dev</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </header>
+</section>
+<!--Single Main Content End-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <header>
+        <article>
+            <div class="footer_top_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="widgets">
+                                <div class="facebook_post">
+                                    <h2>Facebook Timeline</h2>
+                                    <div class="fb-page" data-href="https://www.facebook.com/ITSolutionDinajpur/" data-tabs="timeline" data-width="280" data-height="250" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ITSolutionDinajpur/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ITSolutionDinajpur/">IT Solution Dinajpur</a></blockquote></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="widgets">
+                                <div class="working_time">
+                                    <h2>Working Time</h2>
+                                    <ul>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="" data-toggle="tooltip" title="Office Open"  data-placement="top">Office Open: 10 AM - 5 PM </a></li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="" data-toggle="tooltip" title="Weekend Day"  data-placement="top">Weekend Day: Monday </a></li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="" data-toggle="tooltip" title="Friday Open"  data-placement="top">Friday: Open 10 AM - 5 PM</a></li>
+                                        <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="" data-toggle="tooltip" title="Govt Holyday Closed"  data-placement="top">Every Govt Holyday Closed</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="widgets">
+                                <div class="upcoming_events">
+                                    <h2>Upcoming Events</h2>
+                                    <div class="upcoming_events_details">
+                                         <ul>
+                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href="" data-toggle="tooltip" title="Programming Adda 2017"  data-placement="top">Programming Adda</a></li>
+                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href=""data-toggle="tooltip" title="Girls Camp"  data-placement="top">Girls Camp</a></li>
+                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href=""data-toggle="tooltip" title="C Programming Camp"  data-placement="top">C Programming Camp</a></li>
+                                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> <a href=""data-toggle="tooltip" title="Programming Camp"  data-placement="top">Programming Camp</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="widgets">
+                                <div class="twiter_timeline">
+                                    <h2>Twitter Timeline</h2>
+                                    <p><a class="twitter-timeline" href="https://twitter.com/ITSolutionDnj" height="250">ITSD Twitter Feed</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </header>
+</section>
+
+
+
+<section>
+    <footer>
+        <article>
+            <div class="footer_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="copy_right">
+                                <p>Copy Right  &copy; 2017</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="social_media">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-facebook" data-toggle="tooltip" title="Facebook"  data-placement="top"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter" data-toggle="tooltip" title="Twitter"  data-placement="top"></i></a></li>
+                                    <li><a href=""><i class="fa fa-linkedin" data-toggle="tooltip" title="Linkedin"  data-placement="top"></i></a></li>
+                                    <li><a href=""><i class="fa fa-youtube" data-toggle="tooltip" title="Youtube"  data-placement="top"></i></a></li>
+                                    <li><a href=""><i class="fa fa-pinterest" data-toggle="tooltip" title="Pinterest"  data-placement="top"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="designed">
+                                <p class="text-right">Designed and Powerd by <a href="http://itsd.com.bd" target="_blank">ITSD</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </footer>
+</section>
+
+
+<script src="js/vendor/jquery-1.12.2.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/bootstrap2-toggle.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('').select2({});
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+
+
+</body>
+</html>

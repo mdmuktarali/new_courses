@@ -1,0 +1,352 @@
+.flow{
+    overflow:hidden;
+
+}
+body{
+    background:url(img/1.jpg)repeat center center;
+
+}
+.header_section_area:hover{
+
+
+}
+.header_bg{
+    background:url(img/header_bg1.jpg)no-repeat;
+    background-size:100% 100%;
+    padding-bottom: 30px;
+
+}
+.logo img {
+    width: 100px;
+}
+.header_menu{}
+.header_menu li{}
+.header_menu li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.header_menu li a:hover{
+    background:#337AB7;
+    color:#fff;
+}
+/*Courses Details Info*/
+.coures_row{
+
+}
+.all_courses_heading{}
+.all_courses_heading input{}
+.all_courses_heading input[type=checkbox]{
+
+}
+.our_all_courses{
+    text-align: center;
+
+}
+.our_all_courses h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #d0d0d0;
+}
+.all_courses_heading{
+    text-align:center;
+}
+.all_courses_heading h2{}
+.basic_courses_details{}
+.basic_courses_content{
+
+}
+.basic_courses_details{
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #5cb85c;
+}
+.basic_courses_details h2{
+    background: #5cb85c;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    margin-top: 0px;
+
+}
+.basic_courses_details img{
+    width: 100%;
+    border: 1px solid rgba(224, 224, 224, 0.58);
+    margin-bottom: 5px;
+}
+.basic_courses_details p{}
+.basic_courses_details button{
+    border: 1px solid #5cb85c;
+}
+.basic_courses_details button a{
+    font-family: 'Poppins', sans-serif;
+    color: #464646;
+    letter-spacing: 1px;
+}
+.basic_courses_heading{}
+.basic_courses_heading h2{
+    margin-left: 14px;
+    font-size: 28px;
+    font-family: 'Orbitron', sans-serif;
+    color: #1f1e1e;
+    background: rgba(221, 221, 221, 0.53);
+    padding: 2px 7px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0px 1px 0px rgb(92, 184, 92);
+    letter-spacing: 0px;
+    word-spacing: 10px;
+}
+.mix-container .mix{
+    display:none;
+}
+/*Register Form Signup*/
+hr{
+    width: 10%;
+    color: #fff;
+}
+
+.form-group{
+    margin-bottom: 15px;
+}
+
+label{
+    margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+    background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+.form-control {
+    height: auto!important;
+    padding: 8px 12px !important;
+}
+.input-group {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
+}
+#button {
+    border: 1px solid #ccc;
+    margin-top: 28px;
+    padding: 6px 12px;
+    color: #666;
+    text-shadow: 0 1px #fff;
+    cursor: pointer;
+    -moz-border-radius: 3px 3px;
+    -webkit-border-radius: 3px 3px;
+    border-radius: 3px 3px;
+    -moz-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    -webkit-box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    box-shadow: 0 1px #fff inset, 0 1px #ddd;
+    background: #f5f5f5;
+    background: -moz-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5f5f5), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    background: linear-gradient(top, #f5f5f5 0%, #eeeeee 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#eeeeee', GradientType=0);
+}
+.main-center{
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 10px 40px;
+    background:#009edf;
+    color: #FFF;
+    text-shadow: none;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
+
+}
+span.input-group-addon i {
+    color: #009edf;
+    font-size: 17px;
+}
+
+.login-button{
+    margin-top: 5px;
+}
+
+.login-register{
+    font-size: 11px;
+    text-align: center;
+}
+/*Social Media*/
+.social_media{
+    text-align: center;
+}
+.social_media ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.social_media ul li{
+    float:left;
+}
+.social_media ul li a{
+
+}
+.social_media ul li a i{
+    background: #e0e0e0;
+    padding: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(92, 184, 92);
+    color: #5d6367;
+}
+.social_media ul li a i:hover{}
+
+
+
+.footer_top_area{
+    background: rgba(221, 221, 221, 0.71);
+    margin-top: 26px;
+    margin-bottom: 57px;
+}
+.footer_area{
+    background: #f8f8f8;
+    border-top: 1px solid #ddd;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+/*Footer Widgets*/
+.widgets{}
+.widgets h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    margin-bottom: 21px;
+    border-bottom: 1px solid #bfbfbf;
+    padding-bottom: 11px;
+}
+.working_time{}
+.working_time h2{}
+.working_time ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.working_time ul li{}
+.working_time ul li i{}
+.working_time ul li a{
+    text-decoration: none;
+    color: #505050;
+    line-height: 27px;
+}
+.upcoming_events_details{}
+.upcoming_events_details ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.upcoming_events_details ul li{}
+.upcoming_events_details ul li a{
+    text-decoration: none;
+    color: #505050;
+    line-height: 27px;
+}
+.upcoming_events_details ul li a:hover{
+
+}
+.copy_right{}
+.copy_right p{
+    padding-top: 8px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+.designed{}
+.designed p{
+    padding-top: 8px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 6px;
+}
+/*############################ Single Page CSS #############################*/
+.courses_content_details{}
+.courses_content_details p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px;
+    word-spacing: 2px;
+    color: #424242;
+}
+.courses_content_details p i{
+    color: #38a4dd;
+}
+.single_content_header{}
+.sidebar_widget_content{}
+.sidebar_widget_content p{}
+.sidebar_widget_content p img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+.sidebar_widget_header{}
+.sidebar_widget_header h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    background: #ececec;
+    margin-top: 0px;
+    padding: 7px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    border-bottom: 1px solid #b7b7b7;
+
+
+}
+.single_right_sidebar{
+    background: rgba(245, 245, 245, 0.77);
+    border: 1px solid rgba(221, 221, 221, 0.59);
+}
+.single_widget{
+    margin-bottom: 30px;
+}
+.sidebar_widget_content p{}
+.sidebar_widget_content p a{
+    margin: 4px 8px;
+}
+.next_goal{}
+.next_goal h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+.{}
+.{}
+.{}
+.{}
+.{}
+/*############################ Single Page CSS #############################*/
+.{}
+.{}
+.{}
+.{}
